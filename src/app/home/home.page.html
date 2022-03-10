@@ -14,7 +14,17 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-label for="latitudPromesas">Latitud Promesas</ion-label>
+    <ion-input value="{{latitudPromesa}}" name="latitudPromesas"></ion-input>
+    <ion-label for="longitudPromesas">longitud Promesa</ion-label>
+    <ion-input value="{{longitudPromesa}}" name="longitudPromesas"></ion-input>
+    <hr>
+    <ion-label for="latitudObservables">Latitud Observables</ion-label>
+    <ion-input value="{{latitudObservable}}" name="latitudObservables"></ion-input>
+    <ion-label for="longitudObservables">longitud Observables</ion-label>
+    <ion-input value="{{longitudObservable}}" name="longitudObservables"></ion-input>
+    <br><br>
+    <ion-button color="primary" (click)="geolocalizarPromesas()" expand="block">Geolocalizar Promesas</ion-button>
+    <ion-button color="secondary" (click)="geolocalizarObservables()" expand="block">Geolocalizar Observables</ion-button>
   </div>
 </ion-content>
